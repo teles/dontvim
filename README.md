@@ -19,9 +19,7 @@ cp dontvim/dontvim /usr/local/bin/
 3. Use it
 
 ```
-dontvim directory/filename # open directory/filename in vim, save this to [http://dontpad.com/directory/filename](http://dontpad.com/directory/filename) when user save file.
+dontvim directory/filename  
 ```
 
-
-
-
+This command opens directory/filename in vim and save it to [http://dontpad.com/directory/filename](http://dontpad.com/directory/filename) when the user saves the file.
