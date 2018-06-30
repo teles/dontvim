@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ ! -f $1  ]; then
+    curl http://dontpad.com/$1.body.json?lastUpdate=1 2>/dev/null | jq -r ".body" > $1
+fi
+vim -c ':autocmd BufWritePost * ! curl http://dontpad.com/<afile> --data-urlencode "text=$(cat <afile>)" ' $@
